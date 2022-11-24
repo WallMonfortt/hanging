@@ -23,7 +23,7 @@ function App() {
     const data = await getWord();
 
     // delete accents
-    const word = data.body.Word.normalize("NFD").replace(/[\u0300-\u036f]\s/g, "");
+    const word = data.body.Word.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     setWord(word.toUpperCase());
     setHiddenWord('_ '.repeat(word.length));
     setAttempts(0);
