@@ -49,6 +49,8 @@ button {
   transition: border-color 0.25s;
   margin: 5px;
 }
+
+
 button:hover {
   border-color: #646cff;
 }
@@ -70,3 +72,5 @@ button:focus-visible {
     margin: 5px;
   }
 }
+
+
